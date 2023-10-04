@@ -1,3 +1,4 @@
+// new challenge
 function solution(number) {
     var sum = 0;
 
@@ -7,4 +8,18 @@ function solution(number) {
         }
     }
     return sum;
+}
+
+
+// new challenge
+
+function findNeedle(haystack) {
+  let i = 0;
+  while(i < haystack.length)
+    {
+      if(haystack[i] === "needle"){
+        return "found the needle at position " + i;
+      }
+      i++;
+    }
 }
