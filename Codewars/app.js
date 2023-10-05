@@ -10,9 +10,7 @@ function solution(number) {
     return sum;
 }
 
-
 // new challenge
-
 function findNeedle(haystack) {
   let i = 0;
   while(i < haystack.length)
@@ -23,3 +21,10 @@ function findNeedle(haystack) {
       i++;
     }
 }
+
+// new challenge
+function removeChar(str){
+let removeFirst = str.slice(1);
+let removeLast = removeFirst.slice(0, removeFirst.length -1);
+return removeLast;
+};
