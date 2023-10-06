@@ -28,3 +28,7 @@ let removeFirst = str.slice(1);
 let removeLast = removeFirst.slice(0, removeFirst.length -1);
 return removeLast;
 };
+
+function feast(beast, dish) {
+  return beast.charAt(0) === dish.charAt(0) && beast.charAt(beast.length - 1) === dish.charAt(dish.length - 1);
+}
