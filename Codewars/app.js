@@ -61,3 +61,8 @@ function filter_list(l) {
   }
   return array;
 }
+
+// new challenge
+function move (position, roll) {
+  return position + (2*roll);
+}
