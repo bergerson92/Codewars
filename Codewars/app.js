@@ -66,3 +66,40 @@ function filter_list(l) {
 function move (position, roll) {
   return position + (2*roll);
 }
+
+// new challenge
+let str = "success";
+
+function convertStr(str) {
+
+    console.log(str.replace(/./g, char => str.indexOf(char) === str.lastIndexOf(char) ? '(' : ')'));
+}
+
+convertStr(str);
+
+function replaceChars(str) {
+    const charCount = {}; // Object to store character counts
+
+    // Count the occurrences of each character
+    for (let char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+
+    // Replace characters based on their counts
+    let result = '';
+    for (let char of str) {
+        if (charCount[char] === 1) {
+            result += '(';
+        } else {
+            result += ')';
+        }
+    }
+
+    return result;
+}
+
+// Example usage:
+const inputString = "success";
+const replacedString = replaceChars(inputString);
+console.log(replacedString); // Output: "))(())("
+
