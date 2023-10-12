@@ -77,6 +77,7 @@ function convertStr(str) {
 
 convertStr(str);
 
+//longer version of answer
 function replaceChars(str) {
     const charCount = {}; // Object to store character counts
 
@@ -102,4 +103,17 @@ function replaceChars(str) {
 const inputString = "success";
 const replacedString = replaceChars(inputString);
 console.log(replacedString); // Output: "))(())("
+
+// new challenge
+var countBits = function(n) {
+  let result = 0;
+  const bin = n.toString(2);
+for (const char of bin){
+  if (char === "1"){
+    result += 1;
+  }
+}
+  return result;
+};
+
 
