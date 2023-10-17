@@ -129,4 +129,26 @@ function isPrime(num) {
     return true;
 }
 
+//First non-repeating character
 
+let s = "stress";
+
+function getFirstNonRepeating(s) {
+    let str = toLowerCase(s);
+
+    for (let i = 0; i < s.length; i++) {
+        if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+            return s[i];
+        }
+    }
+    return " ";
+}
+
+function getFirstNonRepeating(s) {
+    for (var i in s) {
+        if (s.match(new RegExp(s[i], "gi")).length === 1) {
+            return s[i];
+        }
+    }
+    return " ";
+}
