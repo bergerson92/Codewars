@@ -172,3 +172,17 @@ function GetSum( a,b )
    else return a + GetSum(a-1,b);
 }
 
+// new Challenge
+function solution(str, ending){
+    let str_length = str.length;
+  let ending_length = ending.length;
+  
+  
+  if (str.charAt(str_length -1) === ending.charAt(ending_length -1)){
+      if (str.charAt(str_length - 2) === ending.charAt(ending_length -2)){
+    return true;
+  }
+      }
+else {
+  return false;}
+}
