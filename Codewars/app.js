@@ -192,10 +192,13 @@ function solution(str, ending){
     let str_length = str.length;
   let ending_length = ending.length;
   
+  if(ending === ""){
+    return true;
+  }
+  
   for (let x = 1; x <= ending_length; x++)
     {
       if(str.charAt(str_length - x) !== ending.charAt(ending_length -x)){
-        console.log(str.charAt(str_length - x));
         return false;
       }
       if(x === ending_length)
